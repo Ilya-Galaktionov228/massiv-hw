@@ -16,8 +16,6 @@ public class Main {
         for (int i = 0; i < one.length; i++) {
             if (i < one.length - 1) {
                 System.out.print(one[i] + ", ");
-            } else {
-                System.out.print(one[i]);
             }
         }
         System.out.println();
@@ -33,21 +31,22 @@ public class Main {
         System.out.println();
 
 
-        for (int i2 = 0; i2 < three.length; i2++) {
-            if (i2 < three.length - 1) {
-                System.out.print(three[i2] + ", ");
+        for (int i = 0; i < three.length; i++) {
+            if (i < three.length - 1) {
+                System.out.print(three[i] + ", ");
             } else {
-                System.out.print(three[i2]);
-            }
-            for (int r = 0; r < three.length; r++) {
-                System.out.print(three[r]);
-                if (r < three.length - 1) {
-                    System.out.print(", ");
-                }
-
-
+                System.out.print(three[i]);
             }
         }
+        for (int r = 0; r < three.length; r++) {
+            System.out.print(three[r]);
+            if (r < three.length - 1) {
+                System.out.print(", ");
+            }
+
+
+        }
+
         System.out.println();
         for (int a = one.length - 1; a >= 0; a--) {
             if (a > 0) {
@@ -67,9 +66,7 @@ public class Main {
         }
         System.out.println();
 
-        for (
-                int c = three.length - 1;
-                c >= 0; c--) {
+        for (int c = three.length - 1; c >= 0; c--) {
             if (c > 0) {
                 System.out.print(three[c] + ", ");
             } else {
@@ -81,7 +78,7 @@ public class Main {
 
         for (int d = 0; d < box.length; d++) {
             if (box[d] % 2 != 0) {
-                box[d] += 1;
+                box[d]++;
             }
         }
 
